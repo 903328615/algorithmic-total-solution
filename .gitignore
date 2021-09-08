@@ -1,0 +1,15 @@
+*.iml
+*/*.iml
+*.class
+target/
+*/target/
+.idea/
+*/.idea/
+.settings/
+*/.settings/
+.DS_Store
+*/.DS_Store
+logs/
+*.log
+*.file
+*.file.lock
