@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="spring.ioc.dependency.injection.constructor.User">
+        <constructor-arg index="0" type="java.lang.String" value="搁浅"/>
+        <constructor-arg index="1" type="java.lang.Integer" value="19"/>
+    </bean>
+    <bean id="customizedPropertyEditorRegistrar" class="spring.ioc.dependency.injection.propertyeditor.CustomizedPropertyEditorRegistrar" />
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    <property name="propertyEditorRegistrars">
+       <list>
+           <ref bean="customizedPropertyEditorRegistrar"/>
+       </list>
+    </property>
+    </bean>
+    <bean id="movie" class="spring.ioc.dependency.injection.setter.Movie">
+        <property name="name" value="长津湖战役"/>
+        <property name="user" value="搁浅,20"/>
+    </bean>
+
+</beans>
