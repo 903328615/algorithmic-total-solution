@@ -11,6 +11,27 @@ import java.util.Random;
  **/
 public class MargeSort {
 
+    // 非递归方法
+    public static void sort2(int[] arr) {
+        // 合并区域以 1 开始
+        int range = 1;
+        while (range < arr.length) {
+            int start = 0;
+            int step = range << 1;
+
+            while (start + range < arr.length) {
+
+                int L = start;
+                int mid = start + range - 1;
+                int R = Math.min(start + step - 1, arr.length - 1);
+                marge(arr, L, mid, R);
+                start = R + 1;
+            }
+            range = step;
+        }
+    }
+
+
     public static void sort(int[] arr) {
         processSort(arr, 0, arr.length - 1);
     }
@@ -56,6 +77,8 @@ public class MargeSort {
         }
     }
 
+
+
     public static void main(String[] args) {
         int[] arr;
         int[] arr2;
@@ -70,11 +93,13 @@ public class MargeSort {
                 arr[j] = item;
                 arr2[j] = item;
             }
-            sort(arr);
+            sort2(arr);
             selectionSort.sort(arr2);
             for (int k = 0; k < len; k++) {
-                if (arr[k]!=arr2[k]){
-                    System.out.println("error");
+                if (arr[k] != arr2[k]) {
+                    System.out.println(Arrays.toString(arr));
+                    System.out.println(Arrays.toString(arr2));
+                    System.out.println("error " + i);
                     return;
                 }
             }
