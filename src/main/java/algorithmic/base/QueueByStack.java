@@ -1,4 +1,4 @@
-package algorithmic.basic;
+package algorithmic.base;
 
 import java.util.LinkedList;
 import java.util.Queue;
