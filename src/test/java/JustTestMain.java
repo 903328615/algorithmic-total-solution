@@ -1,4 +1,11 @@
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.commons.lang3.StringUtils;
+
 import javax.crypto.spec.PSource;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @program: algorithmic-total-solution
@@ -13,9 +20,10 @@ public class JustTestMain {
     }
 
     public static void main(String[] args) {
-        int a = 1;
-        Integer b = 1;
-        System.out.println();
+        JSONArray jsonArray = JSONObject.parseArray("[\"你好\",\"我很好\"]");
+        List<String> comment = JSONObject.parseArray("[\"你好\",\"我很好\",\"\",\"  \"]",String.class);
+        comment = comment.stream().filter(StringUtils::isNotBlank).collect(Collectors.toList());
+        System.out.println(comment);
     }
 }
 
