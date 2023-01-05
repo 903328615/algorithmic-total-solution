@@ -21,9 +21,13 @@ public class JustTestMain {
 
     public static void main(String[] args) {
         JSONArray jsonArray = JSONObject.parseArray("[\"你好\",\"我很好\"]");
-        List<String> comment = JSONObject.parseArray("[\"你好\",\"我很好\",\"\",\"  \"]",String.class);
+        List<String> comment = JSONObject.parseArray("[\"你好\",\"我很好\",\"\",\"  \"]", String.class);
         comment = comment.stream().filter(StringUtils::isNotBlank).collect(Collectors.toList());
         System.out.println(comment);
+        double x = 60 / 14400d;
+        System.out.println(x);
+        System.out.println(x*600);
+        System.out.println((int)(x*(2.5d*3600+600)));
     }
 }
 
