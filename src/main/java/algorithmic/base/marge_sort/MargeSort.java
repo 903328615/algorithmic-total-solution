@@ -1,4 +1,6 @@
-package algorithmic.base;
+package algorithmic.base.marge_sort;
+
+import algorithmic.base.SelectionSort;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package algorithmic.base;
+package algorithmic.base.marge_sort;
 
 import util.CommonUtil;
 import util.RandomUtil;
