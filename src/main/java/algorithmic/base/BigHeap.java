@@ -1,5 +1,6 @@
 package algorithmic.base;
 
+import algorithmic.base.marge_sort.MargeSort;
 import util.CommonUtil;
 import util.RandomUtil;
 
