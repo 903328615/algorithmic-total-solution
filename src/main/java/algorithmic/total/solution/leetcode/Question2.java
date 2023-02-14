@@ -1,4 +1,4 @@
-package algorithmic.total.solution.common;
+package algorithmic.total.solution.leetcode;
 
 import java.util.HashSet;
 import java.util.Set;

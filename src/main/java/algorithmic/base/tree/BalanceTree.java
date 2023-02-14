@@ -2,7 +2,7 @@ package algorithmic.base.tree;
 
 /**
  * @program: algorithmic-total-solution
- * @description:
+ * @description: 判断树是否为二叉平衡树
  * @author: wangzibin
  * @create: 2023-01-11
  **/

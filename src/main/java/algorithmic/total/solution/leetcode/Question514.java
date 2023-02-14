@@ -1,8 +1,4 @@
-package algorithmic.total.solution.common;
-
-import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+package algorithmic.total.solution.leetcode;
 
 /**
  * @program: algorithmic-total-solution

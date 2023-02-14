@@ -1,7 +1,4 @@
-package algorithmic.total.solution.common;
-
-import java.util.Collection;
-import java.util.Collections;
+package algorithmic.total.solution.leetcode;
 
 /**
  * @program: algorithmic-total-solution

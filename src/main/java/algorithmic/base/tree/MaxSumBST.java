@@ -1,6 +1,9 @@
 package algorithmic.base.tree;
 
 import javax.xml.soap.Node;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @program: algorithmic-total-solution
@@ -11,7 +14,7 @@ import javax.xml.soap.Node;
 public class MaxSumBST {
 
     public static class TreeNode {
-        int val;
+        volatile int val;
         TreeNode left;
         TreeNode right;
 

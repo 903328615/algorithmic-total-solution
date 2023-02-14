@@ -1,4 +1,4 @@
-package algorithmic.total.solution.common;
+package algorithmic.total.solution.leetcode;
 
 
 /**
