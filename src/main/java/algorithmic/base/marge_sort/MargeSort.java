@@ -96,7 +96,7 @@ public class MargeSort {
                 arr2[j] = item;
             }
             sort2(arr);
-            selectionSort.sort(arr2);
+            MargeSortRe.sort(arr2);
             for (int k = 0; k < len; k++) {
                 if (arr[k] != arr2[k]) {
                     System.out.println(Arrays.toString(arr));
