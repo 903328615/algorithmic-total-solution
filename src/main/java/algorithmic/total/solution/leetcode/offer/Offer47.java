@@ -1,4 +1,4 @@
-package algorithmic.total.solution.leetcode;
+package algorithmic.total.solution.leetcode.offer;
 
 /**
  * @program: algorithmic-total-solution

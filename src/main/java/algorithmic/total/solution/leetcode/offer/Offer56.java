@@ -1,4 +1,4 @@
-package algorithmic.total.solution.leetcode;
+package algorithmic.total.solution.leetcode.offer;
 
 import java.util.Arrays;
 
