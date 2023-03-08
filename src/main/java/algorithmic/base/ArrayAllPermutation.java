@@ -44,7 +44,7 @@ public class ArrayAllPermutation {
     }
 
     public static void main(String[] args) {
-        permutation1(new int[]{1,2,3});
+        permutation(new int[]{1,2,3});
     }
 }
 
