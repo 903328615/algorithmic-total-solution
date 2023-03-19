@@ -17,7 +17,7 @@ public class Question1599 {
                     wait += customers[index++];
                 }
                 // 能上多少
-                int canGo = wait >= 4 ? 4 : wait;
+                int canGo = Math.min(wait, 4);
                 wait -= canGo;
                 // 上去算总利润
                 total += boardingCost * canGo - runningCost;
