@@ -30,26 +30,7 @@ public class JustTestMain {
     }
 
     public static void main(String[] args) {
-        JSONArray jsonArray = JSONObject.parseArray("[\"你好\",\"我很好\"]");
-        List<String> comment = JSONObject.parseArray("[\"你好\",\"我很好\",\"\",\"  \"]", String.class);
-        comment = comment.stream().filter(StringUtils::isNotBlank).collect(Collectors.toList());
-        System.out.println(comment);
-        double x = 60 / 14400d;
-        System.out.println(x);
-        System.out.println(x * 600);
-        System.out.println((int) (x * (2.5d * 3600 + 600)));
-        int like1 = (int) Math.ceil(0.07f * 135) - 1;
-        System.out.println(like1);
-        System.out.println(Math.round(9.12d));
-        System.out.println(Math.round(9.52d));
-
-        String s = "asjdjajuu:eememmemememeu:u:u:u:ee";
-        s = s.replace("u:e", "ue");
-        s = s.replace("u:", "v");
-        System.out.println(s);
-        for (String f:COLUMN.split(",")){
-            System.out.println(f);
-        }
+        System.out.println("【BOSS直聘】本次验证码是876543，30分钟内有效。工作人员不会向您索要验证码，切勿将验证码提供给他人，谨防被骗。".length());
     }
 }
 
