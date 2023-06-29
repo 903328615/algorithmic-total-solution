@@ -1,4 +1,4 @@
-/*
+
 package design.common;
 
 import com.google.common.collect.Lists;
@@ -16,13 +16,13 @@ import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 
-*/
+
 /**
  * @program: algorithmic-total-solution
  * @description: 时间范围离散点赞分布计算设计
  * @author: wangzibin
  * @create: 2023-01-06
- **//*
+ **/
 
 public class TimeRangeDesign {
 
@@ -32,76 +32,76 @@ public class TimeRangeDesign {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class CmsFakeSubTaskDO {
-        */
+
 /**
          * 自增主键
-         *//*
+         */
 
         private long id;
-        */
+
 /**
          * 创建时间
-         *//*
+         */
 
         private Date addTime;
-        */
+
 /**
          * 更新时间
-         *//*
+         */
 
         private Date updateTime;
-        */
+
 /**
          * 注水作品 id
-         *//*
+         */
 
         private String formId;
-        */
+
 /**
          * 主任务id
-         *//*
+         */
 
         private long fakeTaskId;
-        */
+
 /**
          * 虚拟用户id
-         *//*
+         */
 
         private long randomUserId;
-        */
+
 /**
          * 操作类型  1 点赞 2 收藏 3 评论
-         *//*
+         */
 
         private int operateType;
-        */
+
 /**
          * 内容，评论时为评论内容
-         *//*
+         */
 
         private String content;
-        */
+
 /**
          * 实际的执行时间
-         *//*
+         */
 
         private Date actualOperateTime;
-        */
+
 /**
          * 预计执行时间
-         *//*
+         */
 
         private Date operateTime;
-        */
+
 /**
          * 1 待执行 2 已执行 3 取消执行
-         *//*
+         */
 
         private int status;
 
     }
-*/
-/*
+
+
 
     private static List<CmsFakeSubTaskDO> doCalculationSubTask(int targetNum, int expTime) {
         List<CmsFakeSubTaskDO> result = Lists.newArrayList();
@@ -145,7 +145,7 @@ public class TimeRangeDesign {
         }
        return result;
     }
-*//*
+
 
 
 
@@ -157,7 +157,7 @@ public class TimeRangeDesign {
 
     public static void main(String[] args) {
         ThreadLocalRandom.current().nextInt(100);
-        doCalculationSubTask(1, 4);
+        doCalculationSubTask(10000, 1);
     }
 
 
@@ -165,4 +165,4 @@ public class TimeRangeDesign {
 
 }
 
-*/
+
