@@ -44,6 +44,37 @@ public class Kmp {
 
     }
 
+    public static int[] getNextArray2(String str) {
+
+        if (str == null || str.length() < 1) {
+            return null;
+        }
+        char[] chars = str.toCharArray();
+        int[] next = new int[str.length()];
+        next[0] = -1;
+        next[1] = 0;
+        // 比对位置
+        int cn = 0;
+        int i = 2;
+        while (i < str.length()) {
+            if (chars[i - 1] == chars[cn]) {
+                next[i++] = ++cn;
+            } else if (cn > 0) {
+                // 如果还有找之前的分隔比对
+                cn = next[cn];
+            } else {
+                next[i++] = 0;
+            }
+        }
+        return next;
+
+    }
+
+    public static int indexOf2(String sourceStr, String matchStr) {
+        return -1;
+    }
+
+
     public static int indexOf(String sourceStr, String matchStr) {
         if (matchStr == null || sourceStr == null || sourceStr.length() < 1 || matchStr.length() < 1) {
             return -1;
@@ -74,8 +105,9 @@ public class Kmp {
 
         String str = "acddacddsdcccseedd";
         System.out.println(Arrays.toString(getNextArray(str)));
-        System.out.println(indexOf("sscc","ssqsssdf"));
-        System.out.println(indexOf("ssccqqxxxxd","ccq"));
+        System.out.println(Arrays.toString(getNextArray2(str)));
+        System.out.println(indexOf("sscc", "ssqsssdf"));
+        System.out.println(indexOf("ssccqqxxxxd", "ccq"));
 
     }
 
