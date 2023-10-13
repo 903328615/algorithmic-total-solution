@@ -1,6 +1,5 @@
 package design.pattern.visitor;
 
-import sun.misc.Launcher;
 
 /**
  * @program: algorithmic-total-solution

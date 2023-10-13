@@ -2,7 +2,7 @@ package design.pattern.proxy.autoproxy;
 
 import design.pattern.proxy.staticproxy.BookDAO;
 import design.pattern.proxy.staticproxy.BookDaoImpl;
-import sun.misc.ProxyGenerator;
+
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
